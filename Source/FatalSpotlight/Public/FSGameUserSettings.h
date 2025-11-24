@@ -15,6 +15,7 @@ class FATALSPOTLIGHT_API UFSGameUserSettings : public UGameUserSettings
 	GENERATED_BODY()
 
 public:
+	UFSGameUserSettings(const FObjectInitializer& ObjectInitializer);
 
 	UFUNCTION(BlueprintPure, Category = Settings)
 	float GetMouseXSensitivity() const { return MouseXSensitivity; }

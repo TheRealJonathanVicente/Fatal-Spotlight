@@ -3,6 +3,17 @@
 
 #include "FSGameUserSettings.h"
 
+
+
+UFSGameUserSettings::UFSGameUserSettings(const FObjectInitializer& ObjectInitializer)
+	: Super(ObjectInitializer)
+{
+	MouseXSensitivity = 1.0f;
+	MouseYSensitivity = 1.0f;
+	ControllerXSensitivity = 1.0f;
+	ControllerYSensitivity = 1.0f;
+}
+
 void UFSGameUserSettings::SetMouseXSensitivity(float Sensitivity)
 {
 	MouseXSensitivity = Sensitivity;
